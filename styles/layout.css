@@ -1,0 +1,155 @@
+
+
+
+@media only screen and (max-width:375px){
+  body{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+          "title"
+          " ad1"
+          " ad2"
+          " ad3"
+          "foot"; 
+  }
+
+.header{
+  grid-area: title;
+  max-width: 50%;
+
+} 
+
+
+.ad1 {
+  grid-area: ad1;
+  max-width: 100%;
+}
+
+.barchart{
+  max-width: 90%;
+}
+.ad2 {
+  grid-area: ad2;
+  max-width: 100%;
+}
+
+.ad3{
+  grid-area: ad3;
+  max-width: 100%;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+
+#clockdiv > div{
+  max-width: 80px;
+}
+
+}
+
+
+@media only screen and (min-width: 768px ){
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-gap: 10px;
+  grid-template-areas: 
+        "title  title"
+        "ad1    ad1"
+        "ad2    ad3"
+        "foot   foot";
+  
+      }
+
+
+#myBarChart{
+  max-height: 200px;
+}
+
+.header{
+  grid-area: title;
+  max-width: 50%;
+
+} 
+
+
+.ad1 {
+  grid-area: ad1;
+  max-width: 100%;
+}
+
+.barchart{
+  max-width: 90%;
+}
+.ad2 {
+  grid-area: ad2;
+  max-width: 100%;
+}
+
+.ad3{
+  grid-area: ad3;
+  max-width: 100%;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+
+#clockdiv > div{
+  max-width: 80px;
+}
+
+
+}
+@media only screen and (min-width: 1024px){
+  body{
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 5px;
+    grid-template-areas: 
+        "title title  title"
+        "ad1   ad2    ad3"
+        "foot  foot   foot"; 
+  }
+
+
+.header{
+  grid-area: title;
+} 
+
+.ad1 {
+  grid-area: ad1;
+}
+.ad2 {
+  grid-area: ad2;
+}
+
+.ad3{
+  grid-area: ad3;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+h1{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+}
+
+
+
+
+
+
+

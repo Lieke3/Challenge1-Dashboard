@@ -1,0 +1,159 @@
+html {
+	box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Black+Ops+One|Orbitron|Teko|Staatliches');
+
+*, 
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+body{
+	background-color: #1f3e5a;
+	color: #FFFFFF;
+  font-family: avenir;
+}
+
+h1 {
+  text-align: center;
+  font-family: Audiowide;
+  font-size:3em;
+  color:#FFFFFF;
+  text-shadow: 1px 1px 1px #000;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2, h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  background-color: #21272b;
+  padding: 0.4em;
+  border-radius: 0.2em;
+  font-family: Staatliches;
+  text-shadow: 0.5px 0.5px 0.5px #000;
+
+}
+
+h2.footer{
+  text-align: right;
+  padding: 0em;
+  font-size:1.5em;
+
+}
+h3 {
+  font-size: 1.5em;
+  background-color: rgba(50, 50, 50, 0.2); 
+  position:fixed
+}
+
+
+
+.header, .ad1, .ad2, .ad3 .foot{
+  padding: 0.2em 1em;
+}
+
+.header {
+    background-color: #1f3e5a;
+}
+
+.ad1, .ad2, .ad3{
+  background-color: #fffff0;
+}
+
+.foot {
+    background-color: #21272b;
+}
+
+img {
+  width: 100%;
+  margin: 0;
+}
+
+#myDoughnutChart{
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* KLOK AD3*/
+
+
+a{
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  background: #265;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+a:hover{
+  background: #487;
+}
+
+#clockdiv{
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+
+#clockdiv > div{
+  padding: 10px;
+  border-radius: 3px;
+  background: #1f3e5a;
+  display: inline-block;
+
+}
+
+#clockdiv div > span{
+  padding: 15px;
+  border-radius: 3px;
+  background: #FFC800;
+  display: inline-block;
+
+
+}
+
+.smalltext{
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+/*EIND KLOK*/
+
+footer {
+
+}
+
+@media only screen and (max-width:376px){
+h2.footer{
+  text-align: center;
+}
+
+.header, .ad1, .ad2, .ad3 .foot{
+  padding: 0em 0em;
+}
+
+.smalltext{
+  font-size: 12px;
+}
+}
+
+
+@media only screen and (min-width: 768px{
+
+}
+
+@media only screen and (min-width:1024px){
+
+}

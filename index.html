@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>SPACEX - Challenge 1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet" />
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />	
+	</head>
+	<body>
+	  	<header class="grid-item header">
+	  		<h1 class="headerTekst">SPACEX</h1>
+
+	  	</header>
+	    <aside class="grid-item ad1">
+	    	<h2>Weersverwachting op Mars</h2>
+	    
+	    <div class=barchart>	
+	<canvas id="myBarChart"></canvas>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+		<script>
+
+			var ctx = document.getElementById('myBarChart').getContext('2d');
+			var chart = new Chart(ctx, {
+			    type: 'bar',
+
+			    data: {
+			        labels: ["Vrijdag", "Zaterdag", "Zondag"],
+			        datasets: [{
+			            label: "Temperatuur in graden Celcius, ℃",
+			            backgroundColor: 'rgb(255, 200, 0)',
+			            borderColor: 'rgb(31, 62, 90)',
+			            data: [20, -50, -120],
+			        }]
+			    },
+
+		
+			    options: {}
+			});
+  		
+
+		</script>
+
+		</div>
+
+	    </aside>
+	    <aside class="grid-item ad2">
+	    	<h2>Voorraad maaltijden in het ruimteschip</h2>
+
+	    	
+	<canvas id="myDoughnutChart"></canvas>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+
+		<script>
+
+			var ctx = document.getElementById('myDoughnutChart').getContext('2d');
+			var chart = new Chart(ctx, {
+		
+			    type: 'doughnut',
+
+
+			    data: {
+			        labels: ["Andijviestamppot", "Spaghetti", "Brood", "Stoofpot", "Sushi", "Burger"],
+			        datasets: [{
+			            label: "Hoeveelheid in stuks",
+						backgroundColor: 'rgb(255, 200, 0)',
+
+			     /*  	 ('Andijviestamppot','rgb(255, 0, 60)',
+						 ('Spaghetti','rgb(31, 62, 90)',
+			             ('Brood','rgb(255, 0, 60)',
+			             ('Stoofpot','rgb(255, 0, 60)',
+			             ('Sushi','rgb(255, 0, 60)',
+			             ('Burger','rgb(255, 0, 60)',	]*/		             			      
+			             
+			            borderColor: 'rgb(31, 62, 90)',
+			            data: [100, 100, 400, 50, 400, 340],
+			        }]
+			    },
+
+
+			    options: {}
+			});
+  		
+
+		</script>
+
+
+
+	    </aside>
+
+	<aside class="grid-item ad3">
+	   	<h2>Aantal uur tot landing op Mars</h2>
+	    	
+		   	
+				<div id="clockdiv">
+					<div><span class="days"></span><div class="smalltext">Dagen</div></div>
+					<div><span class="hours"></span><div class="smalltext">Uren</div></div>
+					<div><span class="minutes"></span><div class="smalltext">Minuten</div></div>
+					<div><span class="seconds"></span><div class="smalltext">Seconden</div></div>
+				</div>
+
+
+
+	</aside>
+
+
+	    <footer class="grid-item foot">
+	    	<h2 class="footer">SPACEX</h2>
+
+	    </footer>
+
+
+
+	  		<script src="scripts/klok.js"></script>
+	</body>
+</html>
